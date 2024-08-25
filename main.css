@@ -1,0 +1,180 @@
+*{
+      margin: 0;
+      padding: 0;
+      font-family: 'Electrolize';
+      box-sizing: border-box;
+      font-weight: 400;
+  }
+/* electrolize-regular - latin */
+@font-face {
+      font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Electrolize';
+      font-style: normal;
+      font-weight: 400;
+      src: url('./fontas/electrolize-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+  a{
+      text-decoration: none;
+  }
+  html{
+      height: 100%;
+  }
+  body{
+      width: 100%;
+      min-height: 100vh;
+      background-image: url(./images/BMI-calculator.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .bg{
+      width: 100%;
+      height: 100vh;
+      background-image: url(./images/pngtree-man-body-mass-index-poster-image_1663832.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100vh;
+  }
+  .container{
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 20px;
+  }
+  .container-content{
+      width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+  }
+  .result-bmi{
+      width: 100%;
+      min-height: 290px;
+      border-radius: 15px;
+      background-color: rgba(59, 53, 53, 0.386);
+      margin-bottom: 50px;
+      border: 0.5px solid #fff;
+      padding: 15px;
+  }
+  .result-bmi h1{
+      margin-bottom: 10px !important;
+      line-height: 55px;
+  }
+  .left, .right{
+      width: 500px;
+  }
+  .left{
+      background-color: rgba(59, 53, 53, 0.386);
+      text-align: center;
+      border-radius: 10px;
+      color: #fff;
+      padding: 20px;
+      backdrop-filter: blur(3px);
+      border: 0.5px solid #fff;
+  }
+  .left h1{
+      margin-bottom: 20px;
+      font-size: 40px;
+  }
+  .left label{
+      font-size: 30px;
+      font-weight: 700;
+      display: block;
+      color: white;
+  }
+  .left input{
+      width: 90%;
+      margin: 0 auto;
+      display: block;
+      padding: 10px;
+      font-size: 25px;
+      font-weight: 700;
+      outline: none;
+      border: 1px solid rgb(255, 255, 255);
+      background: transparent;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      color: #000;
+  }
+  .left input::placeholder{
+      color: #fff;
+  }
+  .submit{
+      padding: 15px 25px;
+      color: #fff;
+      background-color: transparent;
+      border: none;
+      border-radius: 8px;
+      font-size: 22px;
+      border: 1px solid #fff;
+  }
+  .right{
+      background: rgba(59, 53, 53, 0.386);
+      border-radius: 10px;
+      border: 0.5px solid #fff;
+      text-align: center;
+      padding: 20px;
+      min-height: 200px;
+  }
+  .right h1{
+      font-size: 40px;
+      margin-bottom: 40px;
+      color: white;
+  }
+  .right-btn{
+      margin-top: 0px;
+      border: 2px solid #fff;
+  }
+  .user-result{
+      text-decoration: underline;
+  }
+  
+  @media(max-width:1041px){
+      .container-content{
+          width: 100%;
+      }
+      .left, .right{
+          width: 50%;
+      }
+      .result-bmi{
+          height: 56%;
+      }
+  }
+  @media(max-width:850px){
+      .right h1{
+          font-size: 35px;
+          margin-bottom: 30px;
+      }
+      .right{
+          min-height: 500px;
+      }
+  }
+  @media(max-width:780px){
+      .left, .right{
+          width: 80%;
+      }
+      .left{
+          border-radius: 12px 12px 0 0;
+      }
+      .right{
+          border-radius: 0 0 12px 12px;
+      }
+      .right h1{
+          font-size: 45px;
+          margin-bottom: 30px;
+      }
+  }
+  @media(max-width:530px){
+      .left, .right{
+          width: 100%;
+      }
+      .right h1{
+          font-size: 35px;
+      }
+  }
+  @media(max-width:389px){
+      .right h1{
+          font-size: 25px;
+      }
+  }
